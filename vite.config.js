@@ -1,5 +1,5 @@
-// vite.config.js
-export default {
-    base: '/proyectoPortfolio/',  // Asegúrate de poner el nombre de tu repositorio
-  }
-  
+import { defineConfig } from 'vite';
+
+export default defineConfig({
+  base: "/proyectoPortfolio/", // Asegura que los archivos se sirvan correctamente
+});
