@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mi Portfolio</title>
+  <link href="/src/style.css" rel="stylesheet"> <!-- Asegúrate de que la ruta esté correcta según tu configuración -->
+</head>
+<body class="bg-gray-100 text-gray-900">
+
+  <!-- Navbar -->
+  <header class="fixed w-full bg-white shadow-md z-10">
+    <div class="max-w-7xl mx-auto px-4 py-5">
+      <nav class="flex justify-between items-center">
+        <div class="text-2xl font-bold text-teal-500">
+          <a href="#">Mi Portfolio</a>
+        </div>
+        <div class="space-x-6 text-gray-700">
+          <a href="#about" class="hover:text-teal-500">Sobre mí</a>
+          <a href="#projects" class="hover:text-teal-500">Proyectos</a>
+          <a href="#contact" class="hover:text-teal-500">Contacto</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Entrada -->
+  <section class="pt-20 bg-teal-500 text-white text-center py-16">
+    <h1 class="text-5xl font-bold">Hola, soy Pablo</h1>
+    <p class="mt-4 text-xl">Desarrollador Web</p>
+    <a href="#projects" class="mt-6 inline-block px-6 py-3 bg-teal-700 text-white font-semibold rounded-md shadow-md hover:bg-teal-600">
+      Ver mis proyectos
+    </a>
+  </section>
+
+  <!-- Sobre mi -->
+  <section id="about" class="py-16 bg-white">
+    <div class="max-w-7xl mx-auto px-6 text-center">
+      <h2 class="text-4xl font-bold text-teal-500">Sobre mí</h2>
+      <p class="mt-4 text-xl text-gray-700">
+        Soy un apasionado del diseño web y la programación. Mi objetivo es crear experiencias digitales limpias, rápidas y accesibles para todos. Trabajo con tecnologías como HTML, CSS, JavaScript, React y Tailwind CSS.
+      </p>
+    </div>
+  </section>
+
+  <!-- Projectos -->
+  <section id="projects" class="py-16 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-6 text-center">
+      <h2 class="text-4xl font-bold text-teal-500">Mis Proyectos</h2>
+      <div class="mt-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Projecto 1 -->
+        <div class="bg-white p-6 shadow-lg rounded-lg hover:shadow-xl transition-shadow">
+          <img src="https://kinsta.com/es/wp-content/uploads/sites/8/2022/04/tailwind-jit-1024x512.jpg" alt="Proyecto 1" class="w-full h-48 object-cover rounded-md">
+          <h3 class="mt-4 text-2xl font-semibold text-gray-800">Proyecto 1</h3>
+          <p class="mt-2 text-gray-600">Descripción breve de mi primer proyecto. Un sitio web que utiliza React y Tailwind CSS.</p>
+        </div>
+        <!-- Projecto 2 -->
+        <div class="bg-white p-6 shadow-lg rounded-lg hover:shadow-xl transition-shadow">
+          <img src="https://www.salesforce.com/es/blog/wp-content/uploads/sites/13/2024/01/ecommerce-trends.jpg" alt="Proyecto 2" class="w-full h-48 object-cover rounded-md">
+          <h3 class="mt-4 text-2xl font-semibold text-gray-800">Proyecto 2</h3>
+          <p class="mt-2 text-gray-600">Un proyecto de ecommerce que optimiza la experiencia de compra online.</p>
+        </div>
+        <!-- Projecto 3 -->
+        <div class="bg-white p-6 shadow-lg rounded-lg hover:shadow-xl transition-shadow">
+          <img src="https://www.wimi-teamwork.com/static/medias/logiciels-gestion-des-taches-1280x640-1.png" alt="Proyecto 3" class="w-full h-48 object-cover rounded-md">
+          <h3 class="mt-4 text-2xl font-semibold text-gray-800">Proyecto 3</h3>
+          <p class="mt-2 text-gray-600">Una aplicación web para gestión de tareas con React y Node.js.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contacto -->
+  <section id="contact" class="py-16 bg-white">
+    <div class="max-w-7xl mx-auto px-6 text-center">
+      <h2 class="text-4xl font-bold text-teal-500">Contacto</h2>
+      <p class="mt-4 text-xl text-gray-700">Si te gustaría trabajar conmigo o tienes alguna pregunta, no dudes en ponerte en contacto.</p>
+      <form action="index.html" method="POST" class="mt-8 max-w-lg mx-auto">
+        <input type="text" placeholder="Tu nombre" class="w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-teal-500 focus:border-teal-500 mb-4">
+        <input type="email" placeholder="Tu correo" class="w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-teal-500 focus:border-teal-500 mb-4">
+        <textarea placeholder="Tu mensaje" class="w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-teal-500 focus:border-teal-500 mb-4" rows="4"></textarea>
+        <button  type="submit" class="w-full px-6 py-3 bg-teal-500 text-white font-semibold rounded-md shadow-md hover:bg-teal-600">
+          Enviar mensaje
+        </button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-teal-500 text-white py-8 text-center">
+    <p>&copy; 2025 Pablo - Todos los derechos reservados</p>
+  </footer>
+
+</body>
+</html>
